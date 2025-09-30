@@ -1,0 +1,8 @@
+      ORG 0000H
+ MOV A,#50H;
+ ADD A,#51H;
+ MOV A,52H;
+MOV A,#00H;
+ADDC A,#00H;
+MOV 53H,A;
+END

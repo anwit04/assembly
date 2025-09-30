@@ -1,0 +1,13 @@
+      ORG 0000H
+0000|           AJMP MAIN
+            ORG 0050H
+0050| MAIN: MOV R1,#08H;
+0052|       MOV R0,#040H;
+0054|       MOV A,#00H;
+0056| LOOP: ADD A,@R0;
+0057|       INC R0;
+0058|       DJNZ R1, LOOP;
+005A|       MOV B,#08H
+005D|       DIV AB;
+005E|       MOV 50H,A;
+      END
